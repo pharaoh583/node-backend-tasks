@@ -1,0 +1,36 @@
+### Invocar al servidor en mi maquina: localhost
+GET http://localhost:3000/tasks
+
+### Crear una nueva tarea
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+    "title": "Tarea 1",
+    "detail": "Detalle de la tarea 1"
+}
+
+###Obtener una tarea
+GET http://localhost:3000/tasks/0
+
+
+###Editar 1 *
+PUT http://localhost:3000/tasks/1
+Content-Type: application/json
+
+{
+    "title": "Tarea 4",
+    "detail": "Detalle de la tarea 4"
+}
+
+
+###Eliminar 0
+DELETE http://localhost:3000/tasks/0
+
+###Marcar completado 1
+PUT http://localhost:3000/tasks/0?state=completed
+
+###Marcar pendiente 1
+PUT http://localhost:3000/tasks/0?state=pending
+
+
